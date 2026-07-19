@@ -1,0 +1,70 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="aod-title">
+	<title id="aod-title">Account Opening Demo architecture: user onboarding flowing through Plaid, Stripe Identity, and SendGrid, orchestrated by a .NET backend</title>
+	<defs>
+		<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+			<stop offset="0%" stop-color="#1b1f38"/>
+			<stop offset="100%" stop-color="#242943"/>
+		</linearGradient>
+		<linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+			<stop offset="0%" stop-color="#53e3fb" stop-opacity="0.15"/>
+			<stop offset="50%" stop-color="#53e3fb" stop-opacity="0.9"/>
+			<stop offset="100%" stop-color="#53e3fb" stop-opacity="0.15"/>
+		</linearGradient>
+	</defs>
+
+	<rect width="800" height="450" fill="url(#bg)"/>
+
+	<!-- faint grid -->
+	<g stroke="#2f3559" stroke-width="1">
+		<line x1="0" y1="112" x2="800" y2="112"/>
+		<line x1="0" y1="225" x2="800" y2="225"/>
+		<line x1="0" y1="338" x2="800" y2="338"/>
+	</g>
+
+	<!-- connecting line -->
+	<line x1="120" y1="225" x2="680" y2="225" stroke="url(#edge)" stroke-width="2"/>
+
+	<!-- User node -->
+	<g transform="translate(70,225)">
+		<circle r="34" fill="#242943" stroke="#53e3fb" stroke-width="2"/>
+		<circle cx="0" cy="-7" r="9" fill="#9bf1ff"/>
+		<path d="M -14 16 Q 0 -2 14 16 Z" fill="#9bf1ff"/>
+		<text x="0" y="58" text-anchor="middle" fill="#c7cbe8" font-family="Arial, sans-serif" font-size="14">User</text>
+	</g>
+
+	<!-- Plaid node -->
+	<g transform="translate(260,225)">
+		<rect x="-70" y="-38" width="140" height="76" rx="12" fill="#2b3155" stroke="#53e3fb" stroke-width="1.5"/>
+		<text x="0" y="-8" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="15" font-weight="bold">Plaid</text>
+		<text x="0" y="14" text-anchor="middle" fill="#9ba3d1" font-family="Arial, sans-serif" font-size="12">Link account</text>
+	</g>
+
+	<!-- Stripe Identity node -->
+	<g transform="translate(440,225)">
+		<rect x="-78" y="-38" width="156" height="76" rx="12" fill="#2b3155" stroke="#53e3fb" stroke-width="1.5"/>
+		<text x="0" y="-8" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="15" font-weight="bold">Stripe Identity</text>
+		<text x="0" y="14" text-anchor="middle" fill="#9ba3d1" font-family="Arial, sans-serif" font-size="12">Verify identity</text>
+	</g>
+
+	<!-- SendGrid node -->
+	<g transform="translate(630,225)">
+		<rect x="-72" y="-38" width="144" height="76" rx="12" fill="#2b3155" stroke="#53e3fb" stroke-width="1.5"/>
+		<text x="0" y="-8" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="15" font-weight="bold">SendGrid</text>
+		<text x="0" y="14" text-anchor="middle" fill="#9ba3d1" font-family="Arial, sans-serif" font-size="12">Confirm email</text>
+	</g>
+
+	<!-- arrows -->
+	<g fill="#53e3fb">
+		<path d="M 168 225 l -10 -6 v 12 z"/>
+		<path d="M 358 225 l -10 -6 v 12 z"/>
+		<path d="M 548 225 l -10 -6 v 12 z"/>
+	</g>
+
+	<!-- backend bracket -->
+	<path d="M 190 300 Q 400 340 610 300" stroke="#6fc3df" stroke-width="1.5" fill="none" stroke-dasharray="4 5"/>
+	<text x="400" y="358" text-anchor="middle" fill="#8d95c4" font-family="Arial, sans-serif" font-size="13">ASP.NET Core API &#8226; orchestrates all three integrations &#8226; status polling</text>
+
+	<!-- top label -->
+	<text x="400" y="52" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="bold">Digital Account Opening Demo</text>
+	<text x="400" y="76" text-anchor="middle" fill="#9ba3d1" font-family="Arial, sans-serif" font-size="13">Solo end-to-end vendor integration build</text>
+</svg>

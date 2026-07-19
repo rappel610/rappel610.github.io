@@ -1,15 +1,15 @@
 <!DOCTYPE HTML>
 <!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Forty by HTML5 UP (html5up.net | @ajlkn), customized by Ross Appelbaum
 -->
-<html>
+<html lang="en">
 	<head>
-		<title>Portfolio by Ross Appelbaum</title>
+		<title>Ross Appelbaum — Solutions Engineer | API Integrations</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Ross Appelbaum is a Solutions Engineer specializing in REST API and webhook integrations across fintech and SaaS platforms — C#, .NET, React, and full-stack development." />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>Portfolio</strong> <span>by Ross Appelbaum</span></a>
+						<a href="index.html" class="logo"><strong>Ross Appelbaum</strong> <span>Solutions Engineer</span></a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -29,6 +29,8 @@
 					<nav id="menu">
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html#projects">Projects</a></li>
+							<li><a href="index.html#about">About</a></li>
 							<li><a href="landing.html">Resume</a></li>
 						</ul>
 					</nav>
@@ -37,13 +39,14 @@
 					<section id="banner" class="major">
 						<div class="inner">
 							<header class="major">
-								<h1>Hi, my name is Ross Appelbaum</h1>
+								<h1>Hi, I'm Ross Appelbaum</h1>
 							</header>
 							<div class="content">
-								<p>A Passionate Software Engineer,<br />
-								Ready to Transform Challenges into Innovations</p>
+								<p>Solutions Engineer building and troubleshooting the API integrations<br />
+								that connect fintech platforms to the vendors they run on.</p>
 								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">My projects</a></li>
+									<li><a href="#projects" class="button next scrolly">My projects</a></li>
+									<li><a href="landing.html" class="button">View resume</a></li>
 								</ul>
 							</div>
 						</div>
@@ -52,44 +55,82 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- One -->
-							<section id="one" class="tiles">
+						<!-- Projects -->
+							<section id="projects" class="tiles">
+
+								<article class="featured">
+									<span class="image">
+										<img src="images/account-opening-demo.svg" alt="Architecture diagram: user onboarding flowing through Plaid, Stripe Identity, and SendGrid, orchestrated by a .NET backend" />
+									</span>
+									<header class="major">
+										<span class="tag">Newest &middot; Solo build</span>
+										<h3><a href="https://account-opening-demo.vercel.app" class="link">Digital Account Opening Demo</a></h3>
+										<p>A solo, end-to-end simulation of the account-opening flow used by real Banking-as-a-Service platforms. A user links a bank account via <strong>Plaid</strong>, verifies their identity via <strong>Stripe Identity</strong>, and receives a confirmation email via <strong>SendGrid</strong> &mdash; with a C#/.NET backend orchestrating all three vendor integrations behind a live status flow, built from an empty repo with no existing codebase to lean on.</p>
+										<ul class="tech-tags">
+											<li>C#</li>
+											<li>ASP.NET Core</li>
+											<li>React</li>
+											<li>TypeScript</li>
+											<li>Plaid</li>
+											<li>Stripe Identity</li>
+											<li>SendGrid</li>
+										</ul>
+										<ul class="actions project-links">
+											<li><a href="https://account-opening-demo.vercel.app" class="button small">Live demo</a></li>
+											<li><a href="https://www.loom.com/share/77f9d7dae4f040028c70ca4e279f3c4c" class="button small">Demo video</a></li>
+											<li><a href="https://github.com/rappel610/account-opening-demo" class="button small alt">Code <span class="icon brands fa-github"></span></a></li>
+										</ul>
+									</header>
+								</article>
+
 								<article>
 									<span class="image">
-										<img src="images/Travel_Threads.png" alt="" />
+										<img src="images/Travel_Threads.png" alt="" loading="lazy" />
 									</span>
 									<header class="major">
 										<h3><a href="https://team124532813.gitlab.io/travel-threads/" class="link">Travel Threads</a></h3>
-										<p>Travel Threads is a dynamic packing planner that uses weather forecasts to guide your trip preparation. Simply enter your destination and dates, add items to pack for each day, and create an organized checklist for hassle-free packing.</p>
+										<p>A dynamic packing planner that uses weather forecasts to guide your trip preparation. Enter your destination and dates, add items to pack for each day, and build an organized checklist for hassle-free packing.</p>
+										<ul class="actions project-links">
+											<li><a href="https://team124532813.gitlab.io/travel-threads/" class="button small">Live site</a></li>
+										</ul>
 									</header>
 								</article>
+
 								<article>
 									<span class="image">
-										<img src="images/CarCar.png" alt="" />
+										<img src="images/CarCar.png" alt="" loading="lazy" />
 									</span>
 									<header class="major">
 										<h3><a href="https://gitlab.com/rappel610/CarCar" class="link">CarCar</a></h3>
-										<p>CarCar is your one-stop solution for buying, selling, and servicing automobiles. This seamless application connects you to a wide range of vehicles and top-notch service professionals, making auto management a breeze.</p>
+										<p>A one-stop platform for buying, selling, and servicing automobiles &mdash; connecting customers to a wide range of vehicles and top-notch service professionals to make auto management a breeze.</p>
+										<ul class="actions project-links">
+											<li><a href="https://gitlab.com/rappel610/CarCar" class="button small alt">Code <span class="icon brands fa-gitlab"></span></a></li>
+										</ul>
 									</header>
 								</article>
-								<article>
-									<span class="image">
-										<img src="images/Project_tracker.png" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="https://gitlab.com/rappel610/ProjectTracker" class="link">Project Tracker</a></h3>
-										<p>Project Tracker is a streamlined app designed to simplify your project management. Create projects, add tasks, and monitor progress in real-time, all in one convenient place for optimized productivity.</p>
-									</header>
-								</article>
+
 							</section>
 
-						<!-- Two -->
-							<section id="two">
+						<!-- About -->
+							<section id="about">
 								<div class="inner">
 									<header class="major">
 										<h2>About me</h2>
 									</header>
-									<p>Having recently transitioned from the retail sector into tech, I am a newly minted software engineer, fresh off the intensive 19-week Hack Reactor bootcamp. Driven by a passion for innovation and problem-solving, I am eager to apply my skills to generate effective solutions in a collaborative team setting. With a mindset nurtured by my unique career path, I bring an unorthodox perspective and a relentless enthusiasm to the world of tech.</p>
+									<p>I'm a Solutions Engineer at MSU Federal Credit Union, where I build and support the API and webhook integrations connecting a Banking-as-a-Service platform serving 400,000+ credit union members and 50,000+ university students to vendors like Plaid, Middesk, MoneyKit, Kinective, Socure, and SendGrid. My day-to-day is C#, ASP.NET Core, SQL Server, and Azure &mdash; plus the customer-facing side of tracing a failure across internal code, vendor platforms, and client requests, then explaining the fix to engineers and non-technical stakeholders alike.</p>
+									<p>I came to engineering from a non-traditional path &mdash; retail management, then teaching English in Japan, then Hack Reactor &mdash; and I still build things end-to-end on my own time, like the account-opening demo above, to keep sharpening that instinct from an empty repo to a working product.</p>
+									<ul class="skills">
+										<li>C#</li>
+										<li>.NET / ASP.NET Core</li>
+										<li>TypeScript / JavaScript</li>
+										<li>React</li>
+										<li>SQL Server</li>
+										<li>REST APIs &amp; Webhooks</li>
+										<li>Azure</li>
+										<li>Python</li>
+										<li>Docker</li>
+										<li>Git</li>
+									</ul>
 									<ul class="actions">
 										<li><a href="landing.html" class="button next">My Resume</a></li>
 									</ul>
@@ -101,50 +142,36 @@
 				<!-- Contact -->
 					<section id="contact">
 						<div class="inner">
-							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section>
-							<section class="split">
+							<header class="major">
+								<h2>Get in touch</h2>
+							</header>
+							<section class="split contact-cards">
 								<section>
 									<div class="contact-method">
 										<span class="icon solid alt fa-envelope"></span>
 										<h3>Email</h3>
-										<a href="#">rappel610@gmail.com</a>
+										<a href="mailto:rappel610@gmail.com">rappel610@gmail.com</a>
 									</div>
 								</section>
 								<section>
 									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(518) 469-6217 </span>
+										<span class="icon brands alt fa-linkedin-in"></span>
+										<h3>LinkedIn</h3>
+										<a href="https://www.linkedin.com/in/rossappelbaum/" target="_blank" rel="noopener">/in/rossappelbaum</a>
 									</div>
 								</section>
 								<section>
 									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>871 Welk Court<br />
-										Corolla, NC 27927<br />
-										United States of America</span>
+										<span class="icon brands alt fa-github"></span>
+										<h3>GitHub</h3>
+										<a href="https://github.com/rappel610" target="_blank" rel="noopener">@rappel610</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon brands alt fa-gitlab"></span>
+										<h3>GitLab</h3>
+										<a href="https://gitlab.com/rappel610" target="_blank" rel="noopener">@rappel610</a>
 									</div>
 								</section>
 							</section>
@@ -155,10 +182,13 @@
 					<footer id="footer">
 						<div class="inner">
 							<ul class="icons">
-								<li><a href="https://gitlab.com/rappel610" class="icon brands alt fa-gitlab"><span class="label">GitLab</span></a></li>
-								<li><a href="https://www.linkedin.com/in/rossappelbaum/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/rappel610" class="icon brands alt fa-github" target="_blank" rel="noopener"><span class="label">GitHub</span></a></li>
+								<li><a href="https://gitlab.com/rappel610" class="icon brands alt fa-gitlab" target="_blank" rel="noopener"><span class="label">GitLab</span></a></li>
+								<li><a href="https://www.linkedin.com/in/rossappelbaum/" class="icon brands alt fa-linkedin-in" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>
+								<li><a href="mailto:rappel610@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
 							<ul class="copyright">
+								<li>&copy; Ross Appelbaum</li>
 								<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>

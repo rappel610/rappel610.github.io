@@ -1,0 +1,285 @@
+/*
+	Custom overrides on top of the Forty template.
+	Palette follows the template's existing navy/cyan theme
+	(#242943 navy, #9bf1ff / #53e3fb cyan).
+*/
+
+/* Responsive images everywhere, no layout blowouts */
+#projects img,
+#resume img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* ---------- Projects / tiles ---------- */
+
+#projects.tiles > article.featured {
+	width: 100%;
+}
+
+#projects.tiles > article:not(.featured) {
+	width: 50%;
+}
+
+#projects.tiles > article.featured .image img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.tag {
+	display: inline-block;
+	font-size: 0.7rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #242943;
+	background: #9bf1ff;
+	padding: 0.3em 0.75em;
+	border-radius: 999px;
+	margin-bottom: 0.75em;
+	font-weight: 700;
+}
+
+ul.tech-tags {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+	margin: 0.75em 0 1em 0;
+	padding: 0;
+}
+
+ul.tech-tags li {
+	font-size: 0.75rem;
+	color: #c7cbe8;
+	border: 1px solid rgba(155, 241, 255, 0.35);
+	border-radius: 999px;
+	padding: 0.25em 0.85em;
+}
+
+ul.actions.project-links {
+	margin-top: 1em;
+}
+
+ul.actions.project-links .button.small {
+	font-size: 0.75rem;
+	height: 2.6em;
+	line-height: 2.6em;
+	padding: 0 1.25em;
+}
+
+ul.actions.project-links .button.small .icon {
+	margin-left: 0.4em;
+}
+
+#projects.tiles > article {
+	transition: transform 0.3s ease;
+}
+
+#projects.tiles > article:hover {
+	transform: translateY(-4px);
+}
+
+/* ---------- About / skills ---------- */
+
+ul.skills {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6em;
+	padding: 0;
+	margin: 1.5em 0;
+}
+
+ul.skills li {
+	background: rgba(155, 241, 255, 0.08);
+	border: 1px solid rgba(155, 241, 255, 0.3);
+	color: #ffffff;
+	font-size: 0.8rem;
+	padding: 0.4em 1em;
+	border-radius: 999px;
+}
+
+/* ---------- Contact cards ---------- */
+
+.contact-cards .contact-method a {
+	word-break: break-word;
+}
+
+/* ---------- Resume page ---------- */
+
+.resume-banner .resume-title {
+	color: #9bf1ff;
+	font-size: 1.1rem;
+	letter-spacing: 0.02em;
+	margin-top: 0.5em;
+}
+
+ul.resume-contact-line {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.5em 1.25em;
+	padding: 0;
+	margin: 1.25em 0 0 0;
+	font-size: 0.9rem;
+}
+
+ul.resume-contact-line li {
+	color: #c7cbe8;
+}
+
+.resume-section {
+	margin-bottom: 2.5em;
+}
+
+.resume-section > h2 {
+	border-bottom: 1px solid rgba(155, 241, 255, 0.25);
+	padding-bottom: 0.4em;
+	margin-bottom: 1em;
+}
+
+.resume-summary {
+	font-size: 1.05rem;
+	line-height: 1.7;
+}
+
+.skills-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5em 2em;
+}
+
+.skills-grid h4 {
+	color: #9bf1ff;
+	margin-bottom: 0.35em;
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+}
+
+.skills-grid p {
+	margin: 0;
+}
+
+.resume-entry {
+	margin-bottom: 1.75em;
+	padding-left: 1.25em;
+	border-left: 2px solid rgba(155, 241, 255, 0.3);
+}
+
+.resume-entry.compact {
+	margin-bottom: 1em;
+}
+
+.resume-entry-header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 0.5em;
+}
+
+.resume-entry-header h3 {
+	margin: 0;
+}
+
+.resume-dates {
+	color: #9bf1ff;
+	font-size: 0.85rem;
+	white-space: nowrap;
+}
+
+.resume-entry-sub {
+	color: #9ba3d1;
+	font-weight: 600;
+	margin: 0.15em 0 0.75em 0;
+}
+
+.resume-entry ul {
+	margin: 0;
+	padding-left: 1.1em;
+}
+
+.resume-entry ul li {
+	margin-bottom: 0.5em;
+	line-height: 1.55;
+}
+
+/* ---------- Responsive tightening ---------- */
+
+@media screen and (max-width: 980px) {
+	#projects.tiles > article.featured {
+		width: 100% !important;
+	}
+
+	#projects.tiles > article:not(.featured) {
+		width: 50% !important;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	.skills-grid {
+		grid-template-columns: 1fr;
+	}
+
+	ul.actions.project-links {
+		flex-direction: column;
+	}
+
+	ul.actions.project-links li {
+		width: 100%;
+	}
+
+	ul.actions.project-links .button.small {
+		width: 100%;
+		text-align: center;
+	}
+
+	.resume-entry-header {
+		flex-direction: column;
+		gap: 0.15em;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#projects.tiles > article,
+	#projects.tiles > article.featured,
+	#projects.tiles > article:not(.featured) {
+		width: 100% !important;
+	}
+
+	ul.resume-contact-line {
+		flex-direction: column;
+		align-items: center;
+		gap: 0.4em;
+	}
+
+	.tag {
+		font-size: 0.65rem;
+	}
+
+	#banner ul.actions,
+	#about ul.actions {
+		flex-direction: column;
+		margin-left: 0;
+		width: 100%;
+	}
+
+	#banner ul.actions li,
+	#about ul.actions li {
+		padding: 0.6em 0 0 0;
+		width: 100%;
+	}
+
+	#banner ul.actions li:first-child,
+	#about ul.actions li:first-child {
+		padding-top: 0;
+	}
+
+	#banner ul.actions .button,
+	#about ul.actions .button {
+		width: 100%;
+	}
+}

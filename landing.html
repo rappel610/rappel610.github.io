@@ -1,37 +1,20 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
-		<title>Ross Appelbaum's Resume</title>
+		<title>Resume — Ross Appelbaum</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Resume for Ross Appelbaum, Solutions Engineer specializing in API integrations, C#/.NET, and full-stack development." />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			.iframe-container {
-				position: relative;
-				overflow: hidden;
-				width: 100%;
-				padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-			}
-
-			.iframe-container iframe {
-				position: absolute;
-				top: 0;
-				left: 0;
-				bottom: 0;
-				right: 0;
-				width: 100%;
-				height: 100%;
-				border: none;
-			}
-		</style>
 	</head>
 	<body class="is-preload">
 
 		<div id="wrapper">
 
 			<header id="header" class="alt style2">
-				<a href="index.html" class="logo"><strong>Portfolio</strong> <span>by Ross Appelbaum</span></a>
+				<a href="index.html" class="logo"><strong>Ross Appelbaum</strong> <span>Solutions Engineer</span></a>
 				<nav>
 					<a href="#menu">Menu</a>
 				</nav>
@@ -40,18 +23,28 @@
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#projects">Projects</a></li>
+					<li><a href="index.html#about">About</a></li>
 					<li><a href="landing.html">Resume</a></li>
 				</ul>
 			</nav>
 
-			<section id="banner" class="style2">
+			<section id="banner" class="style2 resume-banner">
 				<div class="inner">
-					<span class="image">
-						<img src="images/pic07.jpg" alt="" />
-					</span>
 					<header class="major">
-						<h1>Resume</h1>
+						<h1>Ross Appelbaum</h1>
+						<p class="resume-title">Solutions Engineer &middot; API Integrations</p>
 					</header>
+					<ul class="resume-contact-line">
+						<li>Corolla, NC</li>
+						<li><a href="mailto:rappel610@gmail.com">rappel610@gmail.com</a></li>
+						<li><a href="https://www.linkedin.com/in/rossappelbaum/" target="_blank" rel="noopener">LinkedIn</a></li>
+						<li><a href="https://github.com/rappel610" target="_blank" rel="noopener">GitHub</a></li>
+						<li><a href="https://gitlab.com/rappel610" target="_blank" rel="noopener">GitLab</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="assets/docs/Ross_Appelbaum_Resume.pdf" class="button" download>Download PDF</a></li>
+					</ul>
 				</div>
 			</section>
 
@@ -59,12 +52,98 @@
 
 				<section id="resume">
 					<div class="inner">
-						<header class="major">
-							<h2>Ross Appelbaum's Resume</h2>
-						</header>
-						<div class="iframe-container">
-							<iframe src="https://docs.google.com/document/d/e/2PACX-1vTOv4SKn4Muyw3yO0K_Ybx7FJHv1ixCM9ldw0fu857WjIOJts7fUDMWQakX_isL9wIrD0b_beJsvjBU/pub?embedded=true"></iframe>
+
+						<div class="resume-section">
+							<p class="resume-summary">Solutions and Implementation Engineer with nearly three years of experience integrating fintech and SaaS platforms through REST APIs, webhooks, and third-party services. Combines hands-on development experience in C#, .NET, SQL, and Azure with customer-facing troubleshooting, technical documentation, product demonstrations, and cross-functional implementation support. Skilled at isolating failures across internal systems, vendor platforms, and client requests, then communicating clear resolutions to technical and non-technical stakeholders.</p>
 						</div>
+
+						<div class="resume-section">
+							<h2>Technical Skills</h2>
+							<div class="skills-grid">
+								<div>
+									<h4>APIs &amp; Integrations</h4>
+									<p>REST APIs, Webhooks, Postman, Swagger/OpenAPI, API Testing, Integration Troubleshooting, Root-Cause Analysis, Technical Documentation</p>
+								</div>
+								<div>
+									<h4>Platforms &amp; Vendors</h4>
+									<p>Plaid, Stripe, Middesk, MoneyKit, Kinective, Socure, SendGrid</p>
+								</div>
+								<div>
+									<h4>Languages &amp; Frameworks</h4>
+									<p>C#, ASP.NET Core, .NET, TypeScript, JavaScript, SQL, Python, React, Entity Framework Core</p>
+								</div>
+								<div>
+									<h4>Data &amp; Cloud</h4>
+									<p>SQL Server, Azure Portal, Azure Trace Logging, Docker, Git, SSH, Role-Based Access Control</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="resume-section">
+							<h2>Professional Experience</h2>
+							<div class="resume-entry">
+								<div class="resume-entry-header">
+									<h3>Associate Software Engineer</h3>
+									<span class="resume-dates">August 2023 &ndash; Present</span>
+								</div>
+								<p class="resume-entry-sub">MSU Federal Credit Union &middot; Remote</p>
+								<p>Support the implementation, integration, and ongoing operation of Banking-as-a-Service, financial education, and money movement platforms serving more than 400,000 credit union members and 50,000+ university students.</p>
+								<ul>
+									<li>Implemented and maintained REST API and webhook integrations with Middesk, MoneyKit, Kinective, Socure, and SendGrid, enabling business verification, core banking connectivity, external account linking, and automated customer notifications.</li>
+									<li>Built the Middesk KYB integration connecting an ASP.NET Core application and SQL Server database with asynchronous verification webhooks, allowing commercial applicants to complete digital onboarding and receive account and routing numbers after approval.</li>
+									<li>Restored a failed commercial account provisioning pipeline by using Azure trace logs, SQL analysis, and Postman to distinguish active records from orphaned vendor records following a sandbox reset, re-establish system linkage, and return the integration to production.</li>
+									<li>Implemented MoneyKit external account linking and fund-record workflows supporting ACH funding and transfers, including secure relinking behavior and payment processor state management.</li>
+									<li>Resolved a recurring relinking defect by correcting duplicate-validation scope and resetting stale processor data, restoring the user flow and eliminating related support issues.</li>
+									<li>Investigated a client-reported ACH eligibility failure by tracing requests across logs and database records, proving the client application was submitting a stale identifier, and guiding the customer to correct its request flow without changes to the platform.</li>
+									<li>Diagnose integration failures across internal code, third-party vendors, and client-submitted requests, then communicate findings and next steps without assigning blame across system boundaries.</li>
+									<li>Partner daily with Product and UX teams and regularly with Operations and customers to answer technical questions, coordinate implementations, debug issues, and demonstrate product and API functionality.</li>
+									<li>Create API documentation, Swagger specifications, developer instructions, and integration guides used by engineers, product managers, and customers to understand and implement platform capabilities.</li>
+									<li>Built and maintained 75+ ASP.NET Core REST API endpoints supporting onboarding, consent management, account linking, financial education, and money movement workflows.</li>
+									<li>Designed an internal relational test-data generator that accelerated API development, integration testing, and environment setup by producing valid data across interdependent SQL Server tables.</li>
+									<li>Support integrations after launch through monitoring, enhancements, production incident response, root-cause analysis, and ongoing customer troubleshooting.</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="resume-section">
+							<h2>Previous Experience</h2>
+							<div class="resume-entry">
+								<div class="resume-entry-header">
+									<h3>Assistant Language Teacher</h3>
+									<span class="resume-dates">2022</span>
+								</div>
+								<p class="resume-entry-sub">JET Program &middot; Kyoto, Japan</p>
+								<ul>
+									<li>Taught across seven grade levels and adapted complex concepts for audiences with different experience levels, building the communication and presentation skills now used in customer-facing technical work.</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="resume-section">
+							<h2>Education</h2>
+							<div class="resume-entry compact">
+								<div class="resume-entry-header">
+									<h3>Hack Reactor</h3>
+									<span class="resume-dates">2023</span>
+								</div>
+								<p class="resume-entry-sub">Advanced Software Engineering Certificate</p>
+							</div>
+							<div class="resume-entry compact">
+								<div class="resume-entry-header">
+									<h3>Nihongo Center</h3>
+									<span class="resume-dates">2019 &ndash; 2020</span>
+								</div>
+								<p class="resume-entry-sub">Intensive Japanese Language Program</p>
+							</div>
+							<div class="resume-entry compact">
+								<div class="resume-entry-header">
+									<h3>State University of New York at Oswego</h3>
+									<span class="resume-dates">2019</span>
+								</div>
+								<p class="resume-entry-sub">Bachelor of Arts, Global Studies</p>
+							</div>
+						</div>
+
 					</div>
 				</section>
 
@@ -72,70 +151,59 @@
 
 			<section id="contact">
 				<div class="inner">
-					<section>
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field half">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
-								</div>
-								<div class="field half">
-									<label for="email
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">rappel610@gmail.com</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(518) 469-6217</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>871 Welk Court<br />
-										Corolla, NC 27927<br />
-										United States of America</span>
-									</div>
-								</section>
-							</section>
-						</div>
+					<header class="major">
+						<h2>Get in touch</h2>
+					</header>
+					<section class="split contact-cards">
+						<section>
+							<div class="contact-method">
+								<span class="icon solid alt fa-envelope"></span>
+								<h3>Email</h3>
+								<a href="mailto:rappel610@gmail.com">rappel610@gmail.com</a>
+							</div>
+						</section>
+						<section>
+							<div class="contact-method">
+								<span class="icon brands alt fa-linkedin-in"></span>
+								<h3>LinkedIn</h3>
+								<a href="https://www.linkedin.com/in/rossappelbaum/" target="_blank" rel="noopener">/in/rossappelbaum</a>
+							</div>
+						</section>
+						<section>
+							<div class="contact-method">
+								<span class="icon brands alt fa-github"></span>
+								<h3>GitHub</h3>
+								<a href="https://github.com/rappel610" target="_blank" rel="noopener">@rappel610</a>
+							</div>
+						</section>
+						<section>
+							<div class="contact-method">
+								<span class="icon brands alt fa-gitlab"></span>
+								<h3>GitLab</h3>
+								<a href="https://gitlab.com/rappel610" target="_blank" rel="noopener">@rappel610</a>
+							</div>
+						</section>
 					</section>
+				</div>
+			</section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://gitlab.com/rappel610" class="icon brands alt fa-gitlab"><span class="label">GitLab</span></a></li>
-								<li><a href="https://www.linkedin.com/in/rossappelbaum/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://github.com/rappel610" class="icon brands alt fa-github" target="_blank" rel="noopener"><span class="label">GitHub</span></a></li>
+							<li><a href="https://gitlab.com/rappel610" class="icon brands alt fa-gitlab" target="_blank" rel="noopener"><span class="label">GitLab</span></a></li>
+							<li><a href="https://www.linkedin.com/in/rossappelbaum/" class="icon brands alt fa-linkedin-in" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:rappel610@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Ross Appelbaum</li>
+							<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>
 
-			</div>
+		</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
