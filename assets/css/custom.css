@@ -12,20 +12,49 @@
 	display: block;
 }
 
+/* ---------- Featured project card ---------- */
+/* Deliberately kept out of .tiles: that layout renders its image as a
+   fixed-height cropped background via JS and clips overflow, which cut
+   off buttons on tall/content-heavy cards at small viewports. */
+
+.featured-project {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	background: #1b1f38;
+	border: 1px solid rgba(155, 241, 255, 0.2);
+	margin-bottom: 0.5px; /* avoids a hairline gap above the tiles row */
+}
+
+.featured-project-media {
+	flex: 1 1 360px;
+	display: flex;
+	align-items: center;
+	background: #1b1f38;
+}
+
+.featured-project-media img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.featured-project-body {
+	flex: 1 1 380px;
+	padding: 3em;
+}
+
+@media screen and (max-width: 736px) {
+	.featured-project {
+		flex-direction: column;
+	}
+
+	.featured-project-body {
+		padding: 2em 1.5em;
+	}
+}
+
 /* ---------- Projects / tiles ---------- */
-
-#projects.tiles > article.featured {
-	width: 100%;
-}
-
-#projects.tiles > article:not(.featured) {
-	width: 50%;
-}
-
-#projects.tiles > article.featured .image img {
-	width: 100%;
-	object-fit: cover;
-}
 
 .tag {
 	display: inline-block;
@@ -209,16 +238,6 @@ ul.resume-contact-line li {
 
 /* ---------- Responsive tightening ---------- */
 
-@media screen and (max-width: 980px) {
-	#projects.tiles > article.featured {
-		width: 100% !important;
-	}
-
-	#projects.tiles > article:not(.featured) {
-		width: 50% !important;
-	}
-}
-
 @media screen and (max-width: 736px) {
 	.skills-grid {
 		grid-template-columns: 1fr;
@@ -244,12 +263,6 @@ ul.resume-contact-line li {
 }
 
 @media screen and (max-width: 480px) {
-	#projects.tiles > article,
-	#projects.tiles > article.featured,
-	#projects.tiles > article:not(.featured) {
-		width: 100% !important;
-	}
-
 	ul.resume-contact-line {
 		flex-direction: column;
 		align-items: center;
